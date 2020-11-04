@@ -11,7 +11,6 @@ class PeopleList: UIViewController {
 	
 	@IBOutlet weak var tableView: UITableView!
 	
-	
 	var names: [People] = [People(name: "Albatruna"),
 							People(name: "Alligamish"),
 							People(name: "Buffaros"),
@@ -25,7 +24,6 @@ class PeopleList: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-		
 		tableView.delegate = self
 		tableView.dataSource = self
     }
@@ -44,6 +42,17 @@ extension PeopleList: UITableViewDataSource, UITableViewDelegate {
 		cell.setPeople(people: name)
 		
 		return cell
+		
+	}
+	func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+		let viewController = storyboard?.instantiateViewController(withIdentifier: "PaymentViewController") as? PaymentViewController
+		viewController?.name = names[indexPath.row].name
+		viewController?.title = "PayFragment"
+		viewController?.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "NEXT", style: .plain, target: self, action: #selector(processPayment))
+		self.navigationController?.pushViewController(viewController!, animated: true)
+	}
+	
+	@objc private func processPayment() {
 		
 	}
 }
