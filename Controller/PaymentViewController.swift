@@ -11,11 +11,6 @@ class PaymentViewController: UIViewController {
 
 	@IBOutlet weak var nameLabel: UILabel!
 	
-	@IBAction func disclaimerButton(_ sender: Any) {
-	}
-	
-	let button = UIButton()
-	
 	var name = ""
 	
     override func viewDidLoad() {
