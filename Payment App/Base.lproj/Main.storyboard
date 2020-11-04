@@ -154,6 +154,9 @@
                                         <state key="normal" title="DISCLAIMER">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="e9F-WX-vpG" kind="show" id="kFQ-tA-Tc5"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -185,6 +188,37 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mSq-jy-3rq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1518.840579710145" y="766.74107142857144"/>
+        </scene>
+        <!--DisclaimerFragment-->
+        <scene sceneID="AbQ-Uy-Usx">
+            <objects>
+                <viewController id="e9F-WX-vpG" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cBM-nC-HHS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="random text goes here" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="uYf-Us-x3E">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="zpP-cv-T2e"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="zpP-cv-T2e" firstAttribute="trailing" secondItem="uYf-Us-x3E" secondAttribute="trailing" id="KwV-ZH-S3E"/>
+                            <constraint firstItem="uYf-Us-x3E" firstAttribute="top" secondItem="zpP-cv-T2e" secondAttribute="top" id="m0I-LK-eXG"/>
+                            <constraint firstItem="zpP-cv-T2e" firstAttribute="bottom" secondItem="uYf-Us-x3E" secondAttribute="bottom" id="mXJ-jK-WzQ"/>
+                            <constraint firstItem="uYf-Us-x3E" firstAttribute="leading" secondItem="zpP-cv-T2e" secondAttribute="leading" id="mmG-C2-3xo"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="DisclaimerFragment" id="Zm8-rp-5Bt"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Z8A-g7-X7G" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2441" y="1465"/>
         </scene>
         <!--Payment Complete View Controller-->
         <scene sceneID="hob-9Y-a4q">
@@ -357,8 +391,33 @@
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="108.48214285714285"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="4N7-Oc-qIi">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Cdz-KD-O2j" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ITa-mT-sZu">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="e9F-WX-vpG" kind="relationship" relationship="rootViewController" id="TPB-QX-DxY"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bZI-hz-9yP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1518.840579710145" y="1415.625"/>
+        </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="kFQ-tA-Tc5"/>
+    </inferredMetricsTieBreakers>
     <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
