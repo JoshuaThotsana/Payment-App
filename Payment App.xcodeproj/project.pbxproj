@@ -19,6 +19,9 @@
 		3AFAC02325545E5E009F6ABF /* PaymentCompleteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFAC02225545E5E009F6ABF /* PaymentCompleteViewController.swift */; };
 		3AFAC03325546045009F6ABF /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFAC03225546045009F6ABF /* Styles.swift */; };
 		3AFAC03825546156009F6ABF /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFAC03725546156009F6ABF /* HomeViewController.swift */; };
+		3AFAC06825546FEA009F6ABF /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFAC06725546FEA009F6ABF /* Account.swift */; };
+		3AFAC0712554727E009F6ABF /* AccountTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFAC0702554727E009F6ABF /* AccountTableViewCell.swift */; };
+		3AFAC07725547490009F6ABF /* AccountListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFAC07625547490009F6ABF /* AccountListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +60,9 @@
 		3AFAC02225545E5E009F6ABF /* PaymentCompleteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentCompleteViewController.swift; sourceTree = "<group>"; };
 		3AFAC03225546045009F6ABF /* Styles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Styles.swift; sourceTree = "<group>"; };
 		3AFAC03725546156009F6ABF /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		3AFAC06725546FEA009F6ABF /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		3AFAC0702554727E009F6ABF /* AccountTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountTableViewCell.swift; sourceTree = "<group>"; };
+		3AFAC07625547490009F6ABF /* AccountListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +113,9 @@
 		3A7DBB272548C11F0086D6BB /* Payment App */ = {
 			isa = PBXGroup;
 			children = (
+				3AFAC07525547456009F6ABF /* Controllers */,
+				3AFAC06F25547257009F6ABF /* Cells */,
+				3AFAC06625546FD9009F6ABF /* Models */,
 				3AFAC03725546156009F6ABF /* HomeViewController.swift */,
 				3AFAC01A25544FC2009F6ABF /* PayScreenViewController.swift */,
 				3AFAC02225545E5E009F6ABF /* PaymentCompleteViewController.swift */,
@@ -138,6 +147,30 @@
 				3A7DBB4F2548C1210086D6BB /* Info.plist */,
 			);
 			path = "Payment AppUITests";
+			sourceTree = "<group>";
+		};
+		3AFAC06625546FD9009F6ABF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3AFAC06725546FEA009F6ABF /* Account.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3AFAC06F25547257009F6ABF /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				3AFAC0702554727E009F6ABF /* AccountTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		3AFAC07525547456009F6ABF /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3AFAC07625547490009F6ABF /* AccountListViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -275,7 +308,10 @@
 				3AFAC01B25544FC2009F6ABF /* PayScreenViewController.swift in Sources */,
 				3AFAC03325546045009F6ABF /* Styles.swift in Sources */,
 				3A7DBB332548C11F0086D6BB /* Payment_App.xcdatamodeld in Sources */,
+				3AFAC06825546FEA009F6ABF /* Account.swift in Sources */,
+				3AFAC0712554727E009F6ABF /* AccountTableViewCell.swift in Sources */,
 				3AFAC03825546156009F6ABF /* HomeViewController.swift in Sources */,
+				3AFAC07725547490009F6ABF /* AccountListViewController.swift in Sources */,
 				3A7DBB2B2548C11F0086D6BB /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
