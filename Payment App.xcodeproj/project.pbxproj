@@ -15,14 +15,10 @@
 		3A7DBB382548C1210086D6BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A7DBB362548C1210086D6BB /* LaunchScreen.storyboard */; };
 		3A7DBB432548C1210086D6BB /* Payment_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7DBB422548C1210086D6BB /* Payment_AppTests.swift */; };
 		3A7DBB4E2548C1210086D6BB /* Payment_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7DBB4D2548C1210086D6BB /* Payment_AppUITests.swift */; };
-		3ADBB1D92550270100889337 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ADBB1D82550270100889337 /* Account.swift */; };
-		3ADBB1F8255048DB00889337 /* AccountList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ADBB1F7255048DB00889337 /* AccountList.swift */; };
-		3ADBB1FD25504A2900889337 /* AccountCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ADBB1FC25504A2800889337 /* AccountCell.swift */; };
-		3ADBB205255061B500889337 /* People.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ADBB204255061B500889337 /* People.swift */; };
-		3ADBB20A2550623600889337 /* PeopleList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ADBB2092550623600889337 /* PeopleList.swift */; };
-		3ADBB2172550657F00889337 /* PeopleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ADBB2162550657F00889337 /* PeopleCell.swift */; };
-		3ADEDF4F25518A74004B114A /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ADEDF4E25518A74004B114A /* PaymentViewController.swift */; };
-		3ADEDF542551A782004B114A /* PaymentCompleteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ADEDF532551A782004B114A /* PaymentCompleteViewController.swift */; };
+		3AFAC01B25544FC2009F6ABF /* PayScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFAC01A25544FC2009F6ABF /* PayScreenViewController.swift */; };
+		3AFAC02325545E5E009F6ABF /* PaymentCompleteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFAC02225545E5E009F6ABF /* PaymentCompleteViewController.swift */; };
+		3AFAC03325546045009F6ABF /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFAC03225546045009F6ABF /* Styles.swift */; };
+		3AFAC03825546156009F6ABF /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFAC03725546156009F6ABF /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,14 +53,10 @@
 		3A7DBB492548C1210086D6BB /* Payment AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Payment AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A7DBB4D2548C1210086D6BB /* Payment_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Payment_AppUITests.swift; sourceTree = "<group>"; };
 		3A7DBB4F2548C1210086D6BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3ADBB1D82550270100889337 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
-		3ADBB1F7255048DB00889337 /* AccountList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountList.swift; sourceTree = "<group>"; };
-		3ADBB1FC25504A2800889337 /* AccountCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountCell.swift; sourceTree = "<group>"; };
-		3ADBB204255061B500889337 /* People.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = People.swift; sourceTree = "<group>"; };
-		3ADBB2092550623600889337 /* PeopleList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleList.swift; sourceTree = "<group>"; };
-		3ADBB2162550657F00889337 /* PeopleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleCell.swift; sourceTree = "<group>"; };
-		3ADEDF4E25518A74004B114A /* PaymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentViewController.swift; sourceTree = "<group>"; };
-		3ADEDF532551A782004B114A /* PaymentCompleteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentCompleteViewController.swift; sourceTree = "<group>"; };
+		3AFAC01A25544FC2009F6ABF /* PayScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayScreenViewController.swift; sourceTree = "<group>"; };
+		3AFAC02225545E5E009F6ABF /* PaymentCompleteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentCompleteViewController.swift; sourceTree = "<group>"; };
+		3AFAC03225546045009F6ABF /* Styles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Styles.swift; sourceTree = "<group>"; };
+		3AFAC03725546156009F6ABF /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,8 +87,6 @@
 		3A7DBB1C2548C11F0086D6BB = {
 			isa = PBXGroup;
 			children = (
-				3ADBB1E32550423500889337 /* Controller */,
-				3ADBB1D7255026D100889337 /* Model */,
 				3A7DBB272548C11F0086D6BB /* Payment App */,
 				3A7DBB412548C1210086D6BB /* Payment AppTests */,
 				3A7DBB4C2548C1210086D6BB /* Payment AppUITests */,
@@ -117,9 +107,13 @@
 		3A7DBB272548C11F0086D6BB /* Payment App */ = {
 			isa = PBXGroup;
 			children = (
+				3AFAC03725546156009F6ABF /* HomeViewController.swift */,
+				3AFAC01A25544FC2009F6ABF /* PayScreenViewController.swift */,
+				3AFAC02225545E5E009F6ABF /* PaymentCompleteViewController.swift */,
 				3A7DBB282548C11F0086D6BB /* AppDelegate.swift */,
 				3A7DBB2A2548C11F0086D6BB /* SceneDelegate.swift */,
 				3A7DBB2E2548C11F0086D6BB /* Main.storyboard */,
+				3AFAC03225546045009F6ABF /* Styles.swift */,
 				3A7DBB342548C1210086D6BB /* Assets.xcassets */,
 				3A7DBB362548C1210086D6BB /* LaunchScreen.storyboard */,
 				3A7DBB392548C1210086D6BB /* Info.plist */,
@@ -144,28 +138,6 @@
 				3A7DBB4F2548C1210086D6BB /* Info.plist */,
 			);
 			path = "Payment AppUITests";
-			sourceTree = "<group>";
-		};
-		3ADBB1D7255026D100889337 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				3ADBB1D82550270100889337 /* Account.swift */,
-				3ADBB204255061B500889337 /* People.swift */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		3ADBB1E32550423500889337 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				3ADBB1F7255048DB00889337 /* AccountList.swift */,
-				3ADBB1FC25504A2800889337 /* AccountCell.swift */,
-				3ADBB2092550623600889337 /* PeopleList.swift */,
-				3ADBB2162550657F00889337 /* PeopleCell.swift */,
-				3ADEDF4E25518A74004B114A /* PaymentViewController.swift */,
-				3ADEDF532551A782004B114A /* PaymentCompleteViewController.swift */,
-			);
-			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -298,17 +270,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3ADBB1F8255048DB00889337 /* AccountList.swift in Sources */,
 				3A7DBB292548C11F0086D6BB /* AppDelegate.swift in Sources */,
-				3ADBB1D92550270100889337 /* Account.swift in Sources */,
+				3AFAC02325545E5E009F6ABF /* PaymentCompleteViewController.swift in Sources */,
+				3AFAC01B25544FC2009F6ABF /* PayScreenViewController.swift in Sources */,
+				3AFAC03325546045009F6ABF /* Styles.swift in Sources */,
 				3A7DBB332548C11F0086D6BB /* Payment_App.xcdatamodeld in Sources */,
-				3ADBB20A2550623600889337 /* PeopleList.swift in Sources */,
-				3ADBB2172550657F00889337 /* PeopleCell.swift in Sources */,
+				3AFAC03825546156009F6ABF /* HomeViewController.swift in Sources */,
 				3A7DBB2B2548C11F0086D6BB /* SceneDelegate.swift in Sources */,
-				3ADEDF4F25518A74004B114A /* PaymentViewController.swift in Sources */,
-				3ADEDF542551A782004B114A /* PaymentCompleteViewController.swift in Sources */,
-				3ADBB1FD25504A2900889337 /* AccountCell.swift in Sources */,
-				3ADBB205255061B500889337 /* People.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
