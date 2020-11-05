@@ -40,4 +40,10 @@ extension PeopleListViewController: UITableViewDataSource, UITableViewDelegate {
 		return cell
 	}
 	
+	func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+		let viewController = storyboard?.instantiateViewController(withIdentifier: "PayScreenViewController") as! PayScreenViewController
+		viewController.name = peopleNames[indexPath.row].name
+		self.navigationController?.pushViewController(viewController, animated: true)
+	}
+	
 }

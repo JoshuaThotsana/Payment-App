@@ -123,6 +123,38 @@
             </objects>
             <point key="canvasLocation" x="2573.913043478261" y="1638.6160714285713"/>
         </scene>
+        <!--PayFragment-->
+        <scene sceneID="31h-eN-I9T">
+            <objects>
+                <viewController storyboardIdentifier="PayScreenViewController" id="9hv-Bp-6D0" customClass="PayScreenViewController" customModule="Payment_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JgP-6W-DIt">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Joshua" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b4h-pR-mbl">
+                                <rect key="frame" x="0.0" y="128" width="414" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="OEp-AR-FPu"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="b4h-pR-mbl" firstAttribute="leading" secondItem="OEp-AR-FPu" secondAttribute="leading" id="Oye-lw-waE"/>
+                            <constraint firstItem="b4h-pR-mbl" firstAttribute="top" secondItem="OEp-AR-FPu" secondAttribute="top" constant="40" id="uBM-zR-qpm"/>
+                            <constraint firstItem="OEp-AR-FPu" firstAttribute="trailing" secondItem="b4h-pR-mbl" secondAttribute="trailing" id="zCB-yt-GKp"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="PayFragment" id="HEz-AL-vnB"/>
+                    <connections>
+                        <outlet property="personNameToPay" destination="b4h-pR-mbl" id="rRZ-bt-dAa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QWJ-cS-8a6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4000" y="1639"/>
+        </scene>
         <!--View Balances-->
         <scene sceneID="frs-aP-IMG">
             <objects>
@@ -218,6 +250,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4xO-ll-Cfe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1208.6956521739132" y="1329.9107142857142"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="5lR-T2-n0b">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="IKK-Kp-rOy" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Fmv-T0-cIR">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="9hv-Bp-6D0" kind="relationship" relationship="rootViewController" id="xgO-ED-ovg"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FpA-fp-b6w" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3318.840579710145" y="1638.6160714285713"/>
         </scene>
     </scenes>
     <resources>

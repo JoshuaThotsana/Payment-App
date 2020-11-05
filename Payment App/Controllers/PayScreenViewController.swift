@@ -8,7 +8,14 @@
 import UIKit
 
 class PayScreenViewController: UIViewController {
+	
+	@IBOutlet weak var personNameToPay: UILabel!
+	
+	var name = ""
+	
     override func viewDidLoad() {
         super.viewDidLoad()
+		personNameToPay.text = name
     }
+
 }
