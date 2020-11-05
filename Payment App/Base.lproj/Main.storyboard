@@ -137,23 +137,81 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="   From account number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ik6-sO-oTe">
+                                <rect key="frame" x="20" y="198" width="374" height="80"/>
+                                <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="iF3-dU-x9J"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="   Amount" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Pfa-rF-yqM">
+                                <rect key="frame" x="20" y="298" width="374" height="80"/>
+                                <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="em9-mK-BPg"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="80" id="l7S-Ez-9EB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pA2-so-8sN">
+                                <rect key="frame" x="107" y="408" width="200" height="55"/>
+                                <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="LZj-FA-mYI"/>
+                                    <constraint firstAttribute="width" constant="200" id="omT-dr-lEf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="DISCLAIMER">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="OEp-AR-FPu"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="OEp-AR-FPu" firstAttribute="trailing" secondItem="Pfa-rF-yqM" secondAttribute="trailing" constant="20" id="4RB-dw-NRt"/>
+                            <constraint firstItem="OEp-AR-FPu" firstAttribute="trailing" secondItem="Ik6-sO-oTe" secondAttribute="trailing" constant="20" id="ABN-T9-lUq"/>
+                            <constraint firstItem="pA2-so-8sN" firstAttribute="centerX" secondItem="JgP-6W-DIt" secondAttribute="centerX" id="M2w-DB-eqm"/>
+                            <constraint firstItem="Pfa-rF-yqM" firstAttribute="top" secondItem="Ik6-sO-oTe" secondAttribute="bottom" constant="20" id="OQr-3O-irw"/>
                             <constraint firstItem="b4h-pR-mbl" firstAttribute="leading" secondItem="OEp-AR-FPu" secondAttribute="leading" id="Oye-lw-waE"/>
+                            <constraint firstItem="pA2-so-8sN" firstAttribute="top" secondItem="Pfa-rF-yqM" secondAttribute="bottom" constant="30" id="SEE-em-5Mg"/>
+                            <constraint firstItem="Pfa-rF-yqM" firstAttribute="leading" secondItem="OEp-AR-FPu" secondAttribute="leading" constant="20" id="ViX-vX-vqL"/>
+                            <constraint firstItem="Ik6-sO-oTe" firstAttribute="top" secondItem="b4h-pR-mbl" secondAttribute="bottom" constant="40" id="fMY-fo-rMv"/>
+                            <constraint firstItem="Ik6-sO-oTe" firstAttribute="leading" secondItem="OEp-AR-FPu" secondAttribute="leading" constant="20" id="pHG-Gc-200"/>
                             <constraint firstItem="b4h-pR-mbl" firstAttribute="top" secondItem="OEp-AR-FPu" secondAttribute="top" constant="40" id="uBM-zR-qpm"/>
                             <constraint firstItem="OEp-AR-FPu" firstAttribute="trailing" secondItem="b4h-pR-mbl" secondAttribute="trailing" id="zCB-yt-GKp"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="PayFragment" id="HEz-AL-vnB"/>
+                    <navigationItem key="navigationItem" title="PayFragment" id="HEz-AL-vnB">
+                        <barButtonItem key="rightBarButtonItem" title="NEXT" id="HdE-1o-q4r"/>
+                    </navigationItem>
                     <connections>
+                        <outlet property="amountTextField" destination="Pfa-rF-yqM" id="Gsc-ej-XFq"/>
+                        <outlet property="fromAccountTextField" destination="Ik6-sO-oTe" id="voI-tu-EU2"/>
                         <outlet property="personNameToPay" destination="b4h-pR-mbl" id="rRZ-bt-dAa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QWJ-cS-8a6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4000" y="1639"/>
+            <point key="canvasLocation" x="4000.0000000000005" y="1638.6160714285713"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="sMn-vb-YsU">
+            <objects>
+                <viewController id="qQR-XO-dzl" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PAj-cI-Sto">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="aLg-Qy-Kau"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Cr-0E-y5A" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4671" y="2000"/>
         </scene>
         <!--View Balances-->
         <scene sceneID="frs-aP-IMG">
@@ -274,6 +332,9 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

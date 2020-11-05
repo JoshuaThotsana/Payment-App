@@ -11,6 +11,10 @@ class PayScreenViewController: UIViewController {
 	
 	@IBOutlet weak var personNameToPay: UILabel!
 	
+	@IBOutlet weak var fromAccountTextField: UITextField!
+	
+	@IBOutlet weak var amountTextField: UITextField!
+	
 	var name = ""
 	
     override func viewDidLoad() {
