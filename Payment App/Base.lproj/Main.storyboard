@@ -167,6 +167,9 @@
                                 <state key="normal" title="DISCLAIMER">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="qQR-XO-dzl" kind="show" id="SRW-Jp-Qm5"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="OEp-AR-FPu"/>
@@ -198,16 +201,32 @@
             </objects>
             <point key="canvasLocation" x="4000.0000000000005" y="1638.6160714285713"/>
         </scene>
-        <!--View Controller-->
+        <!--DisclaimerFragment-->
         <scene sceneID="sMn-vb-YsU">
             <objects>
                 <viewController id="qQR-XO-dzl" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PAj-cI-Sto">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="random text goes here" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Ohf-P9-5kA">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="aLg-Qy-Kau"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="aLg-Qy-Kau" firstAttribute="bottom" secondItem="Ohf-P9-5kA" secondAttribute="bottom" id="5Ts-fU-GRe"/>
+                            <constraint firstItem="aLg-Qy-Kau" firstAttribute="trailing" secondItem="Ohf-P9-5kA" secondAttribute="trailing" id="DCG-Hk-yrb"/>
+                            <constraint firstItem="Ohf-P9-5kA" firstAttribute="top" secondItem="aLg-Qy-Kau" secondAttribute="top" id="NkN-dE-Csc"/>
+                            <constraint firstItem="Ohf-P9-5kA" firstAttribute="leading" secondItem="aLg-Qy-Kau" secondAttribute="leading" id="rdN-mz-JCD"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="DisclaimerFragment" id="elp-uz-Hgd"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Cr-0E-y5A" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -330,6 +349,9 @@
         </scene>
     </scenes>
     <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
