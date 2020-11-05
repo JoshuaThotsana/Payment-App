@@ -42,6 +42,9 @@
                                 <state key="normal" title="PAY SOMEONE">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="t9f-TJ-Q5f" kind="show" id="8yX-F8-DBd"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="iud-Pv-Wk0"/>
@@ -62,6 +65,63 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tdx-Qu-mEQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1895.6521739130437" y="1329.9107142857142"/>
+        </scene>
+        <!--People-->
+        <scene sceneID="Yrn-0t-kRN">
+            <objects>
+                <viewController id="t9f-TJ-Q5f" customClass="PeopleListViewController" customModule="Payment_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gnn-kp-fbM">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="5Pz-1R-vFd">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PeopleTableViewCell" rowHeight="60" id="HLd-Qd-jfP" customClass="PeopleTableViewCell" customModule="Payment_App" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="60"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="HLd-Qd-jfP" id="4Sb-rH-FhE">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Joshua" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P0d-kS-9mQ">
+                                                    <rect key="frame" x="20" y="11" width="374" height="30"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailingMargin" secondItem="P0d-kS-9mQ" secondAttribute="trailing" id="Ijx-f1-luP"/>
+                                                <constraint firstItem="P0d-kS-9mQ" firstAttribute="leading" secondItem="4Sb-rH-FhE" secondAttribute="leadingMargin" id="gr8-9D-I2S"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="nameToPay" destination="P0d-kS-9mQ" id="lkR-ar-0ZO"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="t9f-TJ-Q5f" id="986-Yo-otA"/>
+                                    <outlet property="delegate" destination="t9f-TJ-Q5f" id="zes-0V-X8D"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="3cU-tM-lHb"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="5Pz-1R-vFd" firstAttribute="leading" secondItem="3cU-tM-lHb" secondAttribute="leading" id="FMu-OL-u9r"/>
+                            <constraint firstItem="5Pz-1R-vFd" firstAttribute="top" secondItem="3cU-tM-lHb" secondAttribute="top" id="G47-bs-Rnk"/>
+                            <constraint firstItem="3cU-tM-lHb" firstAttribute="bottom" secondItem="5Pz-1R-vFd" secondAttribute="bottom" id="Vp5-GA-aKp"/>
+                            <constraint firstItem="3cU-tM-lHb" firstAttribute="trailing" secondItem="5Pz-1R-vFd" secondAttribute="trailing" id="q5R-VP-qny"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="People" id="u6z-FT-aeR"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MeZ-qh-jOg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2573.913043478261" y="1638.6160714285713"/>
         </scene>
         <!--View Balances-->
         <scene sceneID="frs-aP-IMG">

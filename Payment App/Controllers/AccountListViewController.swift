@@ -9,8 +9,6 @@ import UIKit
 
 class AccountListViewController: UIViewController {
 	
-	
-	
 	var accounts: [Account] = [
 		Account(accountName: "First account", accountNumber: "123-456-789", accountBalance: "1 000.00"),
 		Account(accountName: "Second account", accountNumber: "987-654-321", accountBalance: "-100.00"),
