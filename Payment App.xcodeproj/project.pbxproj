@@ -15,7 +15,6 @@
 		3A7DBB382548C1210086D6BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A7DBB362548C1210086D6BB /* LaunchScreen.storyboard */; };
 		3A7DBB432548C1210086D6BB /* Payment_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7DBB422548C1210086D6BB /* Payment_AppTests.swift */; };
 		3A7DBB4E2548C1210086D6BB /* Payment_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7DBB4D2548C1210086D6BB /* Payment_AppUITests.swift */; };
-		3AFAC02325545E5E009F6ABF /* PaymentCompleteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFAC02225545E5E009F6ABF /* PaymentCompleteViewController.swift */; };
 		3AFAC03325546045009F6ABF /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFAC03225546045009F6ABF /* Styles.swift */; };
 		3AFAC03825546156009F6ABF /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFAC03725546156009F6ABF /* HomeViewController.swift */; };
 		3AFAC06825546FEA009F6ABF /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFAC06725546FEA009F6ABF /* Account.swift */; };
@@ -25,6 +24,7 @@
 		3AFAC08725548565009F6ABF /* PeopleListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFAC08625548565009F6ABF /* PeopleListViewController.swift */; };
 		3AFAC08C25548797009F6ABF /* PeopleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFAC08B25548797009F6ABF /* PeopleTableViewCell.swift */; };
 		3AFAC0B02554962E009F6ABF /* PayScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFAC0AF2554962E009F6ABF /* PayScreenViewController.swift */; };
+		3AFAC0B82554A197009F6ABF /* PaymentCompleteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFAC0B72554A197009F6ABF /* PaymentCompleteViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,7 +59,6 @@
 		3A7DBB492548C1210086D6BB /* Payment AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Payment AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A7DBB4D2548C1210086D6BB /* Payment_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Payment_AppUITests.swift; sourceTree = "<group>"; };
 		3A7DBB4F2548C1210086D6BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3AFAC02225545E5E009F6ABF /* PaymentCompleteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentCompleteViewController.swift; sourceTree = "<group>"; };
 		3AFAC03225546045009F6ABF /* Styles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Styles.swift; sourceTree = "<group>"; };
 		3AFAC03725546156009F6ABF /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		3AFAC06725546FEA009F6ABF /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
@@ -69,6 +68,7 @@
 		3AFAC08625548565009F6ABF /* PeopleListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleListViewController.swift; sourceTree = "<group>"; };
 		3AFAC08B25548797009F6ABF /* PeopleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleTableViewCell.swift; sourceTree = "<group>"; };
 		3AFAC0AF2554962E009F6ABF /* PayScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayScreenViewController.swift; sourceTree = "<group>"; };
+		3AFAC0B72554A197009F6ABF /* PaymentCompleteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentCompleteViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,8 +176,8 @@
 				3AFAC03725546156009F6ABF /* HomeViewController.swift */,
 				3AFAC07625547490009F6ABF /* AccountListViewController.swift */,
 				3AFAC08625548565009F6ABF /* PeopleListViewController.swift */,
-				3AFAC02225545E5E009F6ABF /* PaymentCompleteViewController.swift */,
 				3AFAC0AF2554962E009F6ABF /* PayScreenViewController.swift */,
+				3AFAC0B72554A197009F6ABF /* PaymentCompleteViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -314,7 +314,6 @@
 			files = (
 				3A7DBB292548C11F0086D6BB /* AppDelegate.swift in Sources */,
 				3AFAC08725548565009F6ABF /* PeopleListViewController.swift in Sources */,
-				3AFAC02325545E5E009F6ABF /* PaymentCompleteViewController.swift in Sources */,
 				3AFAC03325546045009F6ABF /* Styles.swift in Sources */,
 				3A7DBB332548C11F0086D6BB /* Payment_App.xcdatamodeld in Sources */,
 				3AFAC0B02554962E009F6ABF /* PayScreenViewController.swift in Sources */,
@@ -324,6 +323,7 @@
 				3AFAC082255484CC009F6ABF /* People.swift in Sources */,
 				3AFAC03825546156009F6ABF /* HomeViewController.swift in Sources */,
 				3AFAC07725547490009F6ABF /* AccountListViewController.swift in Sources */,
+				3AFAC0B82554A197009F6ABF /* PaymentCompleteViewController.swift in Sources */,
 				3A7DBB2B2548C11F0086D6BB /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

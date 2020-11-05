@@ -13,12 +13,10 @@ class HomeViewController: UIViewController {
 	
 	@IBOutlet weak var paySomeoneButton: UIButton!
 	
-
     override func viewDidLoad() {
         super.viewDidLoad()
 		Styles.styleButtons(viewBalanceButton)
 		Styles.styleButtons(paySomeoneButton)
     }
-    
 
 }

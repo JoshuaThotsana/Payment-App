@@ -15,11 +15,35 @@ class PayScreenViewController: UIViewController {
 	
 	@IBOutlet weak var amountTextField: UITextField!
 	
-	var name = ""
+	@IBOutlet weak var disclaimerButton: UIButton!
 	
+		
+	
+	var name = ""
+	var accountNumber = ""
+	var amount = ""
+		
     override func viewDidLoad() {
         super.viewDidLoad()
 		personNameToPay.text = name
+		Styles.styleButtons(disclaimerButton)
+		Styles.styleTextFields(fromAccountTextField)
+		Styles.styleTextFields(amountTextField)
     }
+	
+	@IBAction func processPayment(_ sender: Any) {
+		
+		accountNumber = fromAccountTextField.text ?? "-"
+		amount = amountTextField.text ?? "0"
+		
+		let vc = storyboard?.instantiateViewController(withIdentifier: "PaymentCompleteViewController") as! PaymentCompleteViewController
+		vc.title = "PayCompleteFragment"
+		vc.name = name
+		vc.accountNumber = accountNumber
+		vc.amount = amount
+		self.navigationController?.pushViewController(vc, animated: true)
+		print("thotsana mabotsa")
+	}
+	
 
 }
