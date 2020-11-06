@@ -56,7 +56,9 @@
                             <constraint firstItem="HZE-1V-ExZ" firstAttribute="top" secondItem="iud-Pv-Wk0" secondAttribute="top" constant="40" id="pn1-R5-gcI"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Home" id="94J-bg-3DT"/>
+                    <navigationItem key="navigationItem" title="Home" id="94J-bg-3DT">
+                        <barButtonItem key="backBarButtonItem" title=" " id="iCJ-f9-O78"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="paySomeoneButton" destination="cBk-5c-zbX" id="JCL-Un-j5J"/>
                         <outlet property="viewBalanceButton" destination="HZE-1V-ExZ" id="uIn-Av-6RE"/>
@@ -74,25 +76,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="5Pz-1R-vFd">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="5Pz-1R-vFd">
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PeopleTableViewCell" rowHeight="60" id="HLd-Qd-jfP" customClass="PeopleTableViewCell" customModule="Payment_App" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="60"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PeopleTableViewCell" rowHeight="100" id="HLd-Qd-jfP" customClass="PeopleTableViewCell" customModule="Payment_App" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="HLd-Qd-jfP" id="4Sb-rH-FhE">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Joshua" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P0d-kS-9mQ">
-                                                    <rect key="frame" x="20" y="11" width="374" height="30"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Joshua" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P0d-kS-9mQ">
+                                                    <rect key="frame" x="20" y="32" width="374" height="36"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstItem="P0d-kS-9mQ" firstAttribute="centerY" secondItem="4Sb-rH-FhE" secondAttribute="centerY" id="EMr-a4-5OF"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="P0d-kS-9mQ" secondAttribute="trailing" id="Ijx-f1-luP"/>
                                                 <constraint firstItem="P0d-kS-9mQ" firstAttribute="leading" secondItem="4Sb-rH-FhE" secondAttribute="leadingMargin" id="gr8-9D-I2S"/>
                                             </constraints>
@@ -117,7 +120,12 @@
                             <constraint firstItem="3cU-tM-lHb" firstAttribute="trailing" secondItem="5Pz-1R-vFd" secondAttribute="trailing" id="q5R-VP-qny"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="People" id="u6z-FT-aeR"/>
+                    <navigationItem key="navigationItem" title="People" id="u6z-FT-aeR">
+                        <barButtonItem key="backBarButtonItem" title=" " id="af4-3m-ruX"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="5Pz-1R-vFd" id="iSs-Gt-dY4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MeZ-qh-jOg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -189,7 +197,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="PayFragment" id="HEz-AL-vnB">
+                        <barButtonItem key="backBarButtonItem" title=" " id="TSl-cX-Z19"/>
                         <barButtonItem key="rightBarButtonItem" title="NEXT" id="HdE-1o-q4r">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
                                 <action selector="processPayment:" destination="9hv-Bp-6D0" id="Y0E-JF-3bh"/>
                             </connections>
@@ -285,6 +295,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="JF7-bJ-MyR">
                         <barButtonItem key="rightBarButtonItem" title="DONE" id="y0g-0v-wQx">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
                                 <action selector="homePage:" destination="iTs-Ya-xNX" id="VMl-ix-Dmn"/>
                             </connections>
@@ -339,12 +350,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="QTG-Nj-grr">
-                                <rect key="frame" x="20" y="88" width="374" height="774"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="singleLineEtched" rowHeight="100" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="QTG-Nj-grr">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <inset key="separatorInset" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="AccountTableViewCell" rowHeight="100" id="dQA-PJ-qzd" customClass="AccountTableViewCell" customModule="Payment_App" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="374" height="100"/>
+                                        <rect key="frame" x="20" y="55.5" width="374" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dQA-PJ-qzd" id="m6f-Xz-LKD">
                                             <rect key="frame" x="0.0" y="0.0" width="374" height="100"/>
@@ -380,6 +391,7 @@
                                                 </stackView>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <inset key="separatorInset" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         <connections>
                                             <outlet property="accountBalanceLabel" destination="RhM-Yl-lNk" id="4wr-w9-1rf"/>
                                             <outlet property="accountNameLabel" destination="eSc-HK-MiT" id="hN6-1p-pyg"/>
@@ -398,11 +410,13 @@
                         <constraints>
                             <constraint firstItem="QTG-Nj-grr" firstAttribute="top" secondItem="YqZ-tJ-Qxt" secondAttribute="top" id="5mD-xx-B53"/>
                             <constraint firstItem="YqZ-tJ-Qxt" firstAttribute="bottom" secondItem="QTG-Nj-grr" secondAttribute="bottom" id="D6f-9G-uRa"/>
-                            <constraint firstItem="QTG-Nj-grr" firstAttribute="leading" secondItem="YqZ-tJ-Qxt" secondAttribute="leading" constant="20" id="dP1-wh-RQK"/>
-                            <constraint firstItem="YqZ-tJ-Qxt" firstAttribute="trailing" secondItem="QTG-Nj-grr" secondAttribute="trailing" constant="20" id="uHd-8f-0fN"/>
+                            <constraint firstItem="QTG-Nj-grr" firstAttribute="leading" secondItem="YqZ-tJ-Qxt" secondAttribute="leading" id="dP1-wh-RQK"/>
+                            <constraint firstItem="YqZ-tJ-Qxt" firstAttribute="trailing" secondItem="QTG-Nj-grr" secondAttribute="trailing" id="uHd-8f-0fN"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="View Balances" id="mIa-dT-aSn"/>
+                    <navigationItem key="navigationItem" title="View Balances" id="mIa-dT-aSn">
+                        <barButtonItem key="backBarButtonItem" title=" " id="pCo-Gs-2eD"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yAi-kq-U2x" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -413,12 +427,14 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="86D-Vf-JBw" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" opaque="NO" alpha="0.0" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="zCk-3h-vJc">
+                    <navigationBar key="navigationBar" alpha="0.0" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" id="zCk-3h-vJc">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="barTintColor" systemColor="systemIndigoColor"/>
                         <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" type="system" pointSize="25"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </textAttributes>
                     </navigationBar>

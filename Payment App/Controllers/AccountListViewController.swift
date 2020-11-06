@@ -16,7 +16,6 @@ class AccountListViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-		
     }
     
 }
@@ -32,4 +31,5 @@ extension AccountListViewController: UITableViewDataSource, UITableViewDelegate 
 		cell.setAccount(account: account)
 		return cell
 	}
+	
 }

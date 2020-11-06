@@ -9,6 +9,9 @@ import UIKit
 
 class PeopleListViewController: UIViewController {
 	
+	@IBOutlet weak var tableView: UITableView!
+	
+	
 	var peopleNames: [People] = [
 		People(name: "Albatruna"),
 		People(name: "Alligamish"),
@@ -24,6 +27,7 @@ class PeopleListViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+		self.tableView.separatorStyle = .none
     }
 }
 

@@ -17,6 +17,8 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
 		Styles.styleButtons(viewBalanceButton)
 		Styles.styleButtons(paySomeoneButton)
+		self.navigationController?.navigationBar.backIndicatorImage = UIImage(systemName: "arrow.left")
+		self.navigationController?.navigationBar.backIndicatorTransitionMaskImage = UIImage(systemName: "arrow.left")
     }
 
 }
