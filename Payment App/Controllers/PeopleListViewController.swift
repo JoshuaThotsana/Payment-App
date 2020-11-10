@@ -23,6 +23,8 @@ class PeopleListViewController: UIViewController {
 		People(name: "Fiepecker"),
 		People(name: "Gothyte"),
 		People(name: "Parsnipe"),
+		People(name: "Thotsana"),
+		People(name: "Gift"),
 	]
 
     override func viewDidLoad() {
